@@ -11,13 +11,58 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <title>Document</title>
   </head>
   <body>
     <!-- header  -->
     <header id="home">
       <!-- navbar -->
+      <div class="navbar">
+        <div class="nav-center">
+          <!-- navbar header -->
+          <div class="nav-header">
+            <h3 class="logo">Alperen Tour</h3>
+            <button type="button" class="nav-toggle" id="nav-toggle">
+              <i class="fas fa-bars"></i>
+            </button>
+          </div>
+          <ul class="nav-links" id="nav-links">
+            <li>
+              <a href="#home" class="nav-link scroll-link"> home </a>
+            </li>
+            <li>
+              <a href="#about" class="nav-link scroll-link"> about </a>
+            </li>
+            <li>
+              <a href="#services" class="nav-link scroll-link"> services </a>
+            </li>
+            <li>
+              <a href="#featured" class="nav-link scroll-link"> featured </a>
+            </li>
+            <li>
+              <a href="#gallery" class="nav-link scroll-link"> gallery </a>
+            </li>
+          </ul>
+          <ul class="nav-icons">
+            <li>
+              <a href="#" target="_blank" class="nav-icon">
+                <i class="fab fa-facebook"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank" class="nav-icon">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank" class="nav-icon">
+                <i class="fab fa-squarespace"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
       <!-- hero -->
       <div class="hero">
         <div class="hero-banner">
@@ -42,7 +87,7 @@
       <!-- end title -->
       <div class="section-center about-center">
         <div class="about-img">
-          <img src="./images/about.jpeg" class="about-photo" alt="about-img" />
+          <img src="./images/about.jpg" class="about-photo" alt="about-img" />
         </div>
         <div class="about-info">
           <h3>Explore the difference</h3>
@@ -116,11 +161,11 @@
         <!-- single -->
         <article class="tour-card">
           <div class="tours-img-container">
-            <img src="/images/tour-1.jpeg" alt="tour-mage" />
+            <img src="/images/tour-1.jpg" class="tour-img" alt="tour-mage" />
             <p class="tour-date">July 25th,2019</p>
           </div>
           <div class="tour-info">
-            <h4>Tibet Adventure</h4>
+            <h4>Trabzon Tour</h4>
             <p>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi
               minus minima unde tempore dolore odit!
@@ -129,11 +174,11 @@
               <p>
                 <span>
                   <i class="fas fa-map"></i>
-                  China
+                  Turkey
                 </span>
               </p>
               <p>6 day</p>
-              <p>from $12300</p>
+              <p>from $9300</p>
             </div>
           </div>
         </article>
@@ -141,11 +186,11 @@
         <!-- single -->
         <article class="tour-card">
           <div class="tours-img-container">
-            <img src="/images/tour-2.jpeg" alt="tour-mage" />
+            <img src="/images/tour-2.jpg" class="tour-img" alt="tour-mage" />
             <p class="tour-date">July 25th,2019</p>
           </div>
           <div class="tour-info">
-            <h4>Tibet Adventure</h4>
+            <h4>Rize</h4>
             <p>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi
               minus minima unde tempore dolore odit!
@@ -154,11 +199,11 @@
               <p>
                 <span>
                   <i class="fas fa-map"></i>
-                  China
+                  Turkey
                 </span>
               </p>
-              <p>6 day</p>
-              <p>from $12300</p>
+              <p>2 day</p>
+              <p>from $10300</p>
             </div>
           </div>
         </article>
@@ -166,11 +211,11 @@
         <!-- single -->
         <article class="tour-card">
           <div class="tours-img-container">
-            <img src="/images/tour-3.jpeg" alt="tour-mage" />
+            <img src="/images/tour-3.jpg" class="tour-img" alt="tour-mage" />
             <p class="tour-date">July 25th,2019</p>
           </div>
           <div class="tour-info">
-            <h4>Tibet Adventure</h4>
+            <h4>Hearth of Scandinavia</h4>
             <p>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi
               minus minima unde tempore dolore odit!
@@ -179,11 +224,11 @@
               <p>
                 <span>
                   <i class="fas fa-map"></i>
-                  China
+                  Sweden
                 </span>
               </p>
-              <p>6 day</p>
-              <p>from $12300</p>
+              <p>7 day</p>
+              <p>from $2300</p>
             </div>
           </div>
         </article>
@@ -191,11 +236,11 @@
         <!-- single -->
         <article class="tour-card">
           <div class="tours-img-container">
-            <img src="/images/tour-4.jpeg" alt="tour-mage" />
-            <p class="tour-date">Jan 1st,2020</p>
+            <img src="/images/tour4.jpg" alt="tour-mage" class="tour-img" />
+            <p class="tour-date">December 1st,2020</p>
           </div>
           <div class="tour-info">
-            <h4>Tibet Adventure</h4>
+            <h4>North Light</h4>
             <p>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi
               minus minima unde tempore dolore odit!
@@ -204,11 +249,11 @@
               <p>
                 <span>
                   <i class="fas fa-map"></i>
-                  China
+                  Iceland
                 </span>
               </p>
-              <p>6 day</p>
-              <p>from $12300</p>
+              <p>4 day</p>
+              <p>from $1300</p>
             </div>
           </div>
         </article>
@@ -221,15 +266,121 @@
     <!-- end of featured tours -->
 
     <!-- contact -->
-
+    <section class="contact section" id="contact">
+      <div class="section-center contact-center">
+        <div class="contact-title">
+          <h3>Latest tour and uptades ?</h3>
+          <p>Sign and get more info.</p>
+        </div>
+        <form class="contact-form">
+          <input
+            type="email"
+            name="email"
+            class="form-control"
+            placeholder="Your email"
+          />
+          <button class="btn-submit" type="submit">Submit</button>
+        </form>
+      </div>
+    </section>
     <!-- end of contact -->
 
     <!-- gallery  -->
-
+    <section id="gallery">
+      <div class="gallery-center">
+        <!-- single -->
+        <article class="gallery-img-container">
+          <img src="./images/tour-1.jpg" class="gallery-img" alt="tour-1" />
+          <a href="#" class="gallery-icon"> <i class="fas fa-search"></i> </a>
+        </article>
+        <!-- end of -->
+        <!-- single -->
+        <article class="gallery-img-container">
+          <img src="./images/tour-2.jpg" class="gallery-img" alt="tour-1" />
+          <a href="#" class="gallery-icon"> <i class="fas fa-search"></i> </a>
+        </article>
+        <!-- end of -->
+        <!-- single -->
+        <article class="gallery-img-container">
+          <img src="./images/tour-3.jpg" class="gallery-img" alt="tour-1" />
+          <a href="#" class="gallery-icon"> <i class="fas fa-search"></i> </a>
+        </article>
+        <!-- end of -->
+        <!-- single -->
+        <article class="gallery-img-container">
+          <img src="./images/tour4.jpg" class="gallery-img" alt="tour-1" />
+          <a href="#" class="gallery-icon"> <i class="fas fa-search"></i> </a>
+        </article>
+        <!-- end of -->
+        <!-- single -->
+        <article class="gallery-img-container">
+          <img src="./images/tour5.jpg" class="gallery-img" alt="tour-1" />
+          <a href="#" class="gallery-icon"> <i class="fas fa-search"></i> </a>
+        </article>
+        <!-- end of -->
+        <!-- single -->
+        <article class="gallery-img-container">
+          <img src="./images/tour6.jpg" class="gallery-img" alt="tour-1" />
+          <a href="#" class="gallery-icon"> <i class="fas fa-search"></i> </a>
+        </article>
+        <!-- end of -->
+        <!-- single -->
+        <article class="gallery-img-container">
+          <img src="./images/tour7.jpg" class="gallery-img" alt="tour-1" />
+          <a href="#" class="gallery-icon"> <i class="fas fa-search"></i> </a>
+        </article>
+        <!-- end of -->
+        <!-- single -->
+        <article class="gallery-img-container">
+          <img src="./images/tour8.jpg" class="gallery-img" alt="tour-1" />
+          <a href="#" class="gallery-icon"> <i class="fas fa-search"></i> </a>
+        </article>
+        <!-- end of -->
+      </div>
+    </section>
     <!-- end of gallery  -->
 
     <!-- footer -->
-
+    <section class="section footer">
+      <ul class="footer-links">
+        <li>
+          <a href="#home" class="footer-link scroll-link"> home </a>
+        </li>
+        <li>
+          <a href="#about" class="footer-link scroll-link"> about </a>
+        </li>
+        <li>
+          <a href="#services" class="footer-link scroll-link"> services </a>
+        </li>
+        <li>
+          <a href="#featured" class="footer-link scroll-link"> featured </a>
+        </li>
+        <li>
+          <a href="#gallery" class="footer-link scroll-link"> gallery </a>
+        </li>
+      </ul>
+      <ul class="footer-icons">
+        <li>
+          <a href="#" target="_blank" class="footer-icon">
+            <i class="fab fa-facebook"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#" target="_blank" class="footer-icon">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#" target="_blank" class="footer-icon">
+            <i class="fab fa-squarespace"></i>
+          </a>
+        </li>
+      </ul>
+      <p class="copyright">
+        copyright &copy; alperen travel tour company
+        <span id="date"></span> all rights reserved
+      </p>
+    </section>
     <!-- js -->
     <script src="./js/app.js"></script>
   </body>
